@@ -1,0 +1,15 @@
+app:
+  name: will-y-poi-gateway-app
+  namespace: will-y
+  cluster: .apps.a1jxqhzp.eastus2.aroapp.io
+
+git:
+  branch: main
+  repo: https://github.com/rhdh-deploy/will-y-gateway
+  org: rhdh-deploy
+  name: will-y-gateway
+
+image:
+  host: image-registry.openshift-image-registry.svc:5000
+  name: will-y/poi-gateway-app
+  tag: latest
